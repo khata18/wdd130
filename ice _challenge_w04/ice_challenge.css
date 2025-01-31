@@ -1,0 +1,63 @@
+#width{
+    max-width: 450px;
+    margin: 0 auto;
+}
+body{
+    background-color: #5CA0D7 ;
+}
+nav{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font: Roboto;
+    font-weight:bold ;
+    font-family: "Roboto";
+    padding: 20px;
+}
+#hover:hover{
+ color: black;
+}
+p{
+    text-align: center;
+    color: white;    
+}
+#President_Nelson{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: "Arial";
+}
+ol{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 30px;
+    font-family: "Roboto";
+}
+img{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+color: white;
+width: 300px;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+font-weight:normal;
+padding: 10px;
+
+}
+footer p{
+    color: black;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 500;
+    width: 375px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
