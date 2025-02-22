@@ -1,0 +1,64 @@
+# text = "Commitment"
+
+# for letter in text:
+#     if letter == "t":
+#        print(letter.capitalize(), end = "")
+#     else:
+#      print(letter, end = "")
+
+
+
+
+#      for index2 in range (len(secret)):  
+#          letter_secret = secret[index2]
+
+
+
+# print(f"Index first ({index1}) Letter ({letter_word}) ...... Index second ({index2}) Letter ({letter_secret})")
+
+
+# #Prove 07 and 08 - Kosei Hatakenaka
+
+# print("Welcome to the word guessing game!")
+# print()
+
+
+# secret = "mouse"
+# guess = 0
+# word = ""
+# print("Your hint is ",end = "")
+# for underscore in range(len(secret)):
+#     print("_ ", end = "")
+
+
+# while word != secret: #check if word if word is not equal to secret. If it is, the loop will stop.
+#     word = input("\nWhat is your guess? ")
+#     guess += 1
+#     if word != secret: #if word is equal to secret then it will skip the whole process and proceed to final output
+#         if len(word) == len(secret):
+#             # print("Your hint is ",end = "")
+#             for index1 in range(len(word)): #index takes on a value of a number from the number of letter in "word"
+#                 letter_word = word[index1]
+#                 # letter_secret = secret[index1]
+#                 print(f"Index first ({index1}) Letter ({letter_word})")
+#             for index2 in range(len(secret)):
+#                 letter_secret = secret[index2]
+#                 print(f"Index second ({index2}) Letter ({letter_secret})")
+#                 # if letter_word == letter_secret:
+#                 #     print(letter_word.capitalize() , end = "")
+#                 # else:
+#                 #     print("_ " , end = "")
+#         else:
+#             print("Sorry, the guess must have the same number as the letter of the scecret word.", end="")
+
+# print("Congratulations! You guessed it!") #final output
+# print(f"It took you {guess} guesses.") #final output
+
+
+secret = "mouse"
+master = [ secret[index] for index in range(len(secret))]
+print (master)
+if "i" in master:
+    print("Good")
+else:
+    print("not good")
