@@ -4,42 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YDPS | Home</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
   </head>
 <body>
+  <div id="content">
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="images/ydps_logo_dark font.png" alt="YDPS logo" width="100px">
+            <img class="logo" src="images/ydps-logo-removedbg.png" alt="YDPS logo">
           </a>
         <nav>
-                <a href="index.html">Home</a>
+  
                 <a href="services.html">Services</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact Us</a>
-                <a href="login.html">Login</a>
-        
+                <a id="login" href="login.html">Login</a>
         </nav>
     </header>
     <main>
-        <section>
+      
+        <section id="body1">
+          <div id="leftbody1">
             <h2>Welcome to YDPS</h2>
-            <p>YDPS, a trusted water provider in Cebu, Philippines, offers a seamless platform for water tracking, automated billing, and account management. Customers can monitor usage, view bills, and receive real-time notifications, while admins manage accounts, update rates, and generate reports. YDPS ensures a transparent and efficient water service experience.</p>
+            <p>YDPS provides clean, safe, and reliable water to communities across Cebu and Mindanao, including areas with limited access. Starting in Mohon, Talisay, Cebu, we have expanded to ensure households and businesses receive a consistent, high-quality water supply for daily use and operations.</p>
             <a href="services.html">Our Offers</a>
+        
+          </div>
             <video
-        id="water"
+        id="dashboard"
         autoplay loop muted>
         <source src="videos/YDPS-herovid.mp4"
         type = "video/mp4" alt = "Video of water supply"
          />
-        </video>    
+        </video>
         </section>
-        <section>
-            <h2>Introducing YDPS Dashboard</h2>
+        <p id="line">To embody our excellent service, we introduce...</p>
+        <section id="body2">
+          <div i="leftbody2">
+            <h2>YDPS Dashboard</h2>
+            <p>
+              The customer dashboard allows users to track water consumption, view current and past bills, and receive real-time notifications for due dates and payments. Customers can also download invoices, check payment statuses, and monitor usage trends through interactive graphs, ensuring a clear and hassle-free billing experience.</p>
+              <a href="login.html">Sign Up</a>  
+            </div>
             <video
         id="dashboard"
         autoplay loop muted>
         <source src="videos/Dashboard 3.mp4"
-        type = "video/mp4" alt = "Video of water supply"
+        type = "video/mp4" alt = "dashboard"
          />
             </video>
          <img
@@ -54,9 +64,7 @@
             alt="dashboard1"
             width="300px"
           >
-            <p>
-                The customer dashboard allows users to track water consumption, view current and past bills, and receive real-time notifications for due dates and payments. Customers can also download invoices, check payment statuses, and monitor usage trends through interactive graphs, ensuring a clear and hassle-free billing experience.</p>
-                <a href="login.html">Sign Up</a>  
+
         </section>
     </main>
     <footer>
@@ -73,5 +81,6 @@
         <p>Mohon, Talisay, Cebu Ph, 6000</p>
         <a href="site-plan.html">Siteplan</a>
     </footer>
+  </div>
 </body>
 </html>
