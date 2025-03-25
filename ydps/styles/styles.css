@@ -43,6 +43,8 @@ nav {
   margin-right: 20px;
 }
 
+
+
 nav a {
   text-decoration: none;
   color: #091540;
@@ -68,7 +70,7 @@ main {
 
 #body1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 900px auto;
   background-color: #091540;
 }
 
@@ -111,8 +113,9 @@ p {
 #water {
   grid-column: 2/3;
   align-items: center;
-  margin-left: 76px;
   margin-top: 52px;
+  width: 652px;
+  margin-left: -252px;
 }
 
 #line {
@@ -216,8 +219,8 @@ footer p {
   margin-top: -176px;
 }
 
-#footer-line{
-  border-left: 5px solid #091540; 
+#footer-line {
+  border-left: 5px solid #091540;
   height: 200px;
   margin-top: -36px;
 }
