@@ -52,6 +52,15 @@ nav a {
   font-family: Rubik;
 }
 
+
+nav:hover a{
+  color: #091540;
+}
+
+nav:hover a:not(:hover){
+  color: gray;
+}
+
 #logo_link {
   display: flex;
   align-items: center;
@@ -115,7 +124,7 @@ p {
   align-items: center;
   margin-top: 52px;
   width: 652px;
-  margin-left: -252px;
+  margin-left: -120px;
 }
 
 #line {
