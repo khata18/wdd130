@@ -22,10 +22,11 @@ header {
   grid-template-columns: 148px auto;
   align-items: center;
   position: fixed;
-  width: 100%;
   background-color: white;
-  z-index: +1;
+  z-index: 1;
   border-bottom: 1px solid #091540;
+  width: 100%;
+  max-width: 1600px;
 }
 
 #logo_link img {
@@ -43,22 +44,31 @@ nav {
   margin-right: 20px;
 }
 
-
-
 nav a {
   text-decoration: none;
   color: #091540;
   padding: 12px;
   font-family: Rubik;
+  position: relative;
+  font-weight: 450;
 }
 
-
-nav:hover a{
+nav:hover a {
   color: #091540;
 }
 
-nav:hover a:not(:hover){
+nav:hover a:not(:hover) {
   color: gray;
+}
+
+nav a:not(#login):hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8.5px;
+  width: 100%;
+  height: 4px;
+  background-color: #5ce1e6;
 }
 
 #logo_link {
@@ -69,8 +79,14 @@ nav:hover a:not(:hover){
 #login {
   background-color: #091540;
   color: white;
-  padding: 12px 20px;
-  border-radius: 12px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#login:hover {
+  background-color: #1d42c8;
+  color: white;
 }
 
 main {
@@ -79,13 +95,14 @@ main {
 
 #body1 {
   display: grid;
-  grid-template-columns: 900px auto;
+  grid-template-columns: 1fr 1fr;
   background-color: #091540;
+  padding-bottom: 100px;
 }
 
 #body1 h2 {
   font-family: Roboto;
-  font-size: 100px;
+  font-size: 92px;
   margin-top: 52px;
 }
 
@@ -99,10 +116,16 @@ p {
   color: #c8c8c8;
   margin-left: 16px;
   margin-bottom: 52px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-#body1 a {
+#quick-link {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+#our-offers {
   text-decoration: none;
   color: #091540;
   background-color: white;
@@ -113,9 +136,58 @@ p {
   font-size: 24px;
 }
 
+.contain {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  position: relative;
+}
+
+.inquiries {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  font-family: Rubik;
+  font-size: 24px;
+  margin-right: 0px; /* Add some space between the text and the arrow */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.arrow {
+  width: 30px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #091540;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.inquiries:hover .overlay {
+  opacity: 1;
+}
+
 #leftbody1 {
   grid-column: 1/2;
-  max-width: 552px;
+  max-width: 492px;
   margin-left: 52px;
 }
 
@@ -123,8 +195,8 @@ p {
   grid-column: 2/3;
   align-items: center;
   margin-top: 52px;
-  width: 652px;
-  margin-left: -120px;
+  width: 90%;
+  max-width: 900px;
 }
 
 #line {
