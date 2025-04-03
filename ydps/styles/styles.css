@@ -58,7 +58,7 @@ nav:hover a {
 }
 
 nav:hover a:not(:hover) {
-  color: gray;
+  color: #E0E0E1;
 }
 
 nav a:not(#login):hover::after {
@@ -135,10 +135,6 @@ p {
   font-family: Rubik;
   font-size: 24px;
 }
-
-
-
-
 
 .inquiries:hover .overlay {
   opacity: 1;
@@ -293,9 +289,6 @@ footer p {
   margin: 0 auto;
 }
 
-
-
-
 .container {
   position: relative;
   width: 50%;
@@ -342,10 +335,8 @@ footer p {
   color: white;
   font-size: 32px;
   font-family: Rubik;
-  padding: 52px;
   text-decoration: none;
   text-align: center; 
   width: 100%;
-  max-width: 42px;
   justify-content: center;
 }
